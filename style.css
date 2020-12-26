@@ -1,14 +1,97 @@
-body {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #272727;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-textarea {
-  font-family: monospace;
+html {
+  height: 100vh;
+}
+
+body {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #282C34;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+h1 {
+  margin-left: 15px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+nav {
+  text-transform: capitalize;
+  margin-right: 15px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+button {
+  font: inherit;
+  background-color: #4CAF50;
+  text-align: center;
+  color: inherit;
+  text-transform: inherit;
+  border: none;
+  padding: 8px;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (min-width: 700px) {
+  code {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  code {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  padding: 10px 10px;
+}
+
+div {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+code {
+  padding: 10px 10px;
+  display: block;
+  white-space: nowrap;
   font-size: 16px;
-  height: 90vh;
-  width: 80%;
-  outline: none;
-  resize: none;
+  overflow-x: auto;
+}
+
+code[data]:empty:before {
+  content: attr(data);
+  color: #999;
 }

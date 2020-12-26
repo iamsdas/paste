@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" dir="ltr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>paste.bin</title>
     <link rel="stylesheet" href="style.css">
@@ -11,10 +11,19 @@
   </head>
 
   <body onload="main()">
-    <button onclick="showLink()">gen</button>
-    <center>
-      <textarea id="txt"></textarea>
-    </center>
+    <header class="bar">
+      <h1 class="bar-text">paste</h1>
+      <nav class="bar-text">
+        <a href="https://github.com/iamsdas/paste">github</a>
+        <button onclick="showLink()">generate link</a>
+      </nav>
+    </header>
+
+    <div>
+      <code id="txt" contenteditable="true" spellcheck="false" data="paste here"></code>
+    </div>
+
+
   </body>
 
 </html>

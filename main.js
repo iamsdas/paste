@@ -3,7 +3,7 @@ function main() {
   if (encodedTxt.length != 0) {
     encodedTxt = encodedTxt.slice(1);
     document.getElementById('txt')
-      .value = decode(encodedTxt);
+      .innerText = decode(encodedTxt);
   }
 }
 
@@ -26,9 +26,9 @@ function decode(input) {
 
 function getCurr() {
   return document.getElementById('txt')
-    .value;
+    .innerText;
 }
 
 function showLink() {
-  alert(location + '#' + encode(getCurr()));
+  alert(location.href.split('#')[0] + '#' + encode(getCurr()));
 }
