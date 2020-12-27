@@ -1,10 +1,11 @@
 function main() {
+  var doc = document.getElementById('txt');
   var encodedTxt = location.hash;
   if (encodedTxt.length != 0) {
     encodedTxt = encodedTxt.slice(1);
-    document.getElementById('txt')
-      .innerText = decode(encodedTxt);
+    doc.innerText = decode(encodedTxt);
   }
+  doc.focus();
 }
 
 function encode(input) {

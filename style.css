@@ -94,4 +94,5 @@ code {
 code[data]:empty:before {
   content: attr(data);
   color: #999;
+  cursor: text;
 }
