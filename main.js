@@ -31,5 +31,5 @@ function getCurr() {
 }
 
 function showLink() {
-  alert(location.href.split('#')[0] + '#' + encode(getCurr()));
+  prompt('Copy Link', location.href.split('#')[0] + '#' + encode(getCurr()));
 }
