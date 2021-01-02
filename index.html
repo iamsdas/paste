@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" dir="ltr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paste.bin</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="lib/ulzss.js"></script>
-    <script src="main.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" dir="ltr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>paste.bin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lib/ulzss.js"></script>
+  <script src="main.js"></script>
+</head>
 
-  <body onload="main()">
-    <header class="bar">
-      <h1 class="bar-text">paste</h1>
-      <nav class="bar-text">
-        <a href="https://github.com/iamsdas/paste">github</a>
-        <button onclick="showLink()">share</a>
-      </nav>
-    </header>
-
-    <div>
-      <code id="txt" contenteditable="true" spellcheck="false" data="paste here" tabindex="0"></code>
-    </div>
-
-
-  </body>
+<body>
+  <header class="bar">
+    <h1 class="bar-text">paste</h1>
+    <nav class="bar-text">
+      <a href="https://github.com/iamsdas/paste">github</a>
+      <button>share</button>
+    </nav>
+  </header>
+  <div>
+    <code id="txt" data="paste here"></code>
+  </div>
+</body>
 
 </html>
