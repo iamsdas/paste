@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   let doc = document.getElementById('txt');
   let encodedTxt = location.hash;
-  doc.contentEditable = true;
   doc.spellcheck = false;
-  doc.focus();
   if (encodedTxt.length != 0) {
     encodedTxt = encodedTxt.slice(1);
-    doc.innerText = decode(encodedTxt);
+    doc.value = decode(encodedTxt);
   }
   document.querySelector("button").onclick = showLink;
 });
@@ -30,7 +28,7 @@ function decode(input) {
 
 function getCurr() {
   return document.getElementById('txt')
-    .innerText;
+    .value;
 }
 
 function showLink() {

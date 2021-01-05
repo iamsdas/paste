@@ -5,9 +5,9 @@
   <meta charset="UTF-8" dir="ltr">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>paste.bin</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="lib/ulzss.js"></script>
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="styles/prism.css">
+  <link rel="stylesheet" href="styles/prism-live.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -18,9 +18,13 @@
       <button>share</button>
     </nav>
   </header>
-  <div>
-    <code id="txt" data="paste here"></code>
+  <div class="main">
+    <textarea id="txt" class="line-numbers prism-live language-js" placeholder="Type here"></textarea>
   </div>
+  <script src="scripts/src/ulzss.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/prism.js"></script>
+  <script src="scripts/prism-live.js?load=css,html,javascript"></script>
 </body>
 
 </html>

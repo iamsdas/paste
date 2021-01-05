@@ -5,20 +5,21 @@
 
 html {
   height: 100vh;
+  width: 100vw;
 }
 
 body {
   color: #fff;
+  background-color: #272822;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #282C34;
   height: 100%;
 }
 
 header {
   width: 100%;
-  background-color: #222;
+  background-color: #111;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -57,42 +58,12 @@ button:active {
   top: 1px;
 }
 
-@media screen and (min-width: 700px) {
-  code {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  code {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
 a {
   color: inherit;
   text-decoration: inherit;
   padding: 10px 10px;
 }
 
-div {
-  width: 100%;
-  flex: 1;
-  overflow-y: scroll;
-}
-
-code {
-  padding: 10px 10px;
-  display: block;
-  white-space: nowrap;
-  font-size: 16px;
-  overflow-x: auto;
-}
-
-code[data]:empty:before {
-  content: attr(data);
-  color: #999;
-  cursor: text;
+.main {
+  overflow: auto;
 }
